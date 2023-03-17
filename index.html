@@ -49,12 +49,12 @@
 
                 <div class="containerChat">
 
-                    <div class="singlechat">
+                    <div class="singlechat" v-for="contact in contacts">
                         <div class="userImg">
-                            <img src="./img/avatar_1.jpg" alt="">
+                            <img :src= " contact.avatar" alt="">
                         </div>
                         <div class="userText">
-                            <h4>Michele</h4>
+                            <h4>{{contact.name}}</h4>
                             <p class="colortext">Ultimo messaggio inviato</p>
                         </div>
                         <div class="hours colortext">
@@ -63,19 +63,6 @@
 
                     </div>
 
-                    <div class="singlechat">
-                        <div class="userImg">
-                            <img src="./img/avatar_1.jpg" alt="">
-                        </div>
-                        <div class="userText">
-                            <h4>Michele</h4>
-                            <p class="colortext">Ultimo messaggio inviato</p>
-                        </div>
-                        <div class="hours colortext">
-                            <span>12:00</span>
-                        </div>
-
-                    </div>
 
                 </div>
 
@@ -85,12 +72,12 @@
             <div class="containerRight">
                 <div class="headerRight">
 
-                    <div class="headerRigtUser">
+                    <div class="headerRigtUser" >
                         <div class="userImg">
                             <img src="./img/avatar_1.jpg" alt="">
                         </div>
                         <div class="userText">
-                            <h4>Michele</h4>
+                            <h4> Michele </h4>
                             <p class="colortext">Ultimo accesso oggi alle 12:00</p>
                         </div>
                     </div>
@@ -103,7 +90,20 @@
 
                 </div>
                 <div class="containerMain">
-                  
+
+                  <div class="messageSend"> 
+                    <div class="textsend">
+                        <p>Hai portato a spasso il cane?</p>
+                        <span>15:30</span>
+                    </div>
+                  </div>
+
+                  <div class="messageReceived">
+                    <div class="textReceived">
+                        <p>Tutto Fatto!! tranquillo </p>
+                        <span>16:10</span>
+                    </div>
+                  </div>
 
                 </div>
 

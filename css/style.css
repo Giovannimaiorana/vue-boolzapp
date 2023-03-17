@@ -182,7 +182,57 @@ background-color:black;
     margin-right: 20px;
     cursor: pointer;
 }
+.messageSend{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.messageSend .textsend{
+    width: 300px;
+    background-color: rgb(214,249 , 186);
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    position: relative;
+}
+.messageSend .textsend span{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 10px;
+}
+.messageReceived{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.messageReceived .textReceived{
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    position: relative;
+}
+.messageReceived .textReceived span{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 10px;
+}
 /*Generali*/
 .colortext{
     color: lightslategray;
+}
+/*hover*/
+.singlechat:hover{
+    background-color: lightgray;
 }
