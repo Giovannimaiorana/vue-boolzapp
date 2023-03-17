@@ -90,21 +90,11 @@
 
                 </div>
                 <div class="containerMain">
+                    <div v-for="element in contacts[contact].messages" :class="element.status=='sent'?'mymessage':'messagereceived'">
+                        <p> {{element.message}} </p>
+                       
 
-                  <div class="messageSend"> 
-                    <div class="textsend">
-                        <p>Hai portato a spasso il cane?</p>
-                        <span>15:30</span>
                     </div>
-                  </div>
-
-                  <div class="messageReceived">
-                    <div class="textReceived">
-                        <p>Tutto Fatto!! tranquillo </p>
-                        <span>16:10</span>
-                    </div>
-                  </div>
-
                 </div>
 
 
