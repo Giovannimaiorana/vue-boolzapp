@@ -197,7 +197,7 @@ status: 'received'
      },
      risposta(){
       setTimeout(()=>{
-        this.contacts[this.contact].messages.push( {message:'mi tradisce ',status:'received'} );
+        this.contacts[this.contact].messages.push( {message:'ok ',status:'received'} );
       },1000);
      },
      searchUser(){
@@ -208,7 +208,7 @@ status: 'received'
           contact.visible=false;
         }   
       });
-      
+
      }
       
     }   
