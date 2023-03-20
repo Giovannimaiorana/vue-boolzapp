@@ -5,6 +5,7 @@ const { createApp } = Vue
       return {
         contact:0,
         newMessage:"",
+        testoRicerca:"",
         contacts: [
 {
 name: 'Michele',
@@ -196,8 +197,18 @@ status: 'received'
      },
      risposta(){
       setTimeout(()=>{
-        this.contacts[this.contact].messages.push( {message:'sono impegnato ci sentiamo dopo ',status:'received'} );
+        this.contacts[this.contact].messages.push( {message:'mi tradisce ',status:'received'} );
       },1000);
+     },
+     searchUser(){
+      this.contacts.forEach(element => {
+        if(contact.name.includes(this.testoRicerca)){
+          contact.visible=true;
+        } else {
+          contact.visible=false;
+        }   
+      });
+      
      }
       
     }   
