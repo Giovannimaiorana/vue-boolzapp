@@ -49,7 +49,7 @@
 
                 <div class="containerChat">
 
-                    <div class="singlechat" v-for="contact in contacts">
+                    <div class="singlechat" v-for="contact in contacts" @click="selezionachat(index)">
                         <div class="userImg">
                             <img :src= " contact.avatar" alt="">
                         </div>
@@ -92,6 +92,7 @@
                 <div class="containerMain">
                     <div v-for="element in contacts[contact].messages" :class="element.status=='sent'?'mymessage':'messagereceived'">
                         <p> {{element.message}} </p>
+                        <span>12:00</span>
                        
 
                     </div>

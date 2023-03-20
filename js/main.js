@@ -179,8 +179,13 @@ message: 'OK!!',
 status: 'received'
 }
 ],
-}]
-        
+}]      
       }
-    }
+    },
+     methods:{
+     selezionachat(chatamico){
+      this.contact = chatamico;
+     }
+      
+    }   
   }).mount('#app')
