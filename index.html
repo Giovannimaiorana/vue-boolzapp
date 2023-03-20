@@ -19,7 +19,7 @@
 
                     <div class="userReference" >
                        <img src="./img/avatar_1.jpg" alt="">
-                       <h5> Michele </h5>
+                       <h5> Giovanni </h5>
                     </div>
 
                     <div class="iconHeader">
@@ -74,10 +74,10 @@
 
                     <div class="headerRigtUser" >
                         <div class="userImg">
-                            <img src="./img/avatar_1.jpg" alt="">
+                            <img :src="contacts[contact].avatar" alt="">
                         </div>
-                        <div class="userText">
-                            <h4> Michele </h4>
+                        <div class="userText" >
+                            <h4> {{contacts[contact].name}}</h4>
                             <p class="colortext">Ultimo accesso oggi alle 12:00</p>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                     </div>
 
                     <div class="textmessage">
-                        <input type="text" placeholder="Scrivi un Messaggio">
+                        <input type="text" placeholder="Scrivi un Messaggio" v-model="newMessage" @keyup.enter="creazionemessaggio">
 
                     </div>
 

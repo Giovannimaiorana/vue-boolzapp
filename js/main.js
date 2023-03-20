@@ -4,6 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         contact:0,
+        newMessage:"",
         contacts: [
 {
 name: 'Michele',
@@ -116,7 +117,7 @@ status: 'received'
 
 
 {
-name: 'Claudia',
+name: 'Giuliana',
 avatar: "./img/avatar_5.jpg",
 visible: true,
 messages: [
@@ -185,6 +186,18 @@ status: 'received'
      methods:{
      selezionachat(chatamico){
       this.contact = chatamico;
+     },
+     creazionemessaggio(){
+      if(this.newMessage.length > 0){
+        this.contacts[this.contact].messages.push( {message:this.newMessage, status:'sent'});
+        this.newMessage="";
+        this.risposta();
+      }
+     },
+     risposta(){
+      setTimeout(()=>{
+        this.contacts[this.contact].messages.push( {message:'sono impegnato ci sentiamo dopo ',status:'received'} );
+      },1000);
      }
       
     }   
