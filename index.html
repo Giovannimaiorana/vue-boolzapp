@@ -17,9 +17,9 @@
 
                 <div class="headerLeft">
 
-                    <div class="userReference">
+                    <div class="userReference" >
                        <img src="./img/avatar_1.jpg" alt="">
-                       <h5>Michele</h5>
+                       <h5> Michele </h5>
                     </div>
 
                     <div class="iconHeader">
@@ -49,7 +49,7 @@
 
                 <div class="containerChat">
 
-                    <div class="singlechat" v-for="contact in contacts" @click="selezionachat(index)">
+                    <div class="singlechat" v-for="(contact, index) in contacts"  @click="selezionachat(index)">
                         <div class="userImg">
                             <img :src= " contact.avatar" alt="">
                         </div>
