@@ -202,10 +202,10 @@ status: 'received'
      },
      searchUser(){
       this.contacts.forEach(element => {
-        if(contact.name.includes(this.testoRicerca)){
-          contact.visible=true;
+        if(element.name.includes(this.testoRicerca)){
+          element.visible=true;
         } else {
-          contact.visible=false;
+          element.visible=false;
         }   
       });
 
